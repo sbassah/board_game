@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Board Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="game">
+
+    <div class="game_area">
+      <div class="game_top">
+        <div class="player_one_dash">
+          <h2>Player 1 </h2>
+          <span style="font-weight:bold;"> Health Score : </span>
+          <span id="p1_score"></span><br>
+          <span style="font-weight:bold;"> Weapon : </span>
+          <span id="p1_weapon"> </span><br />
+        </div>
+        <span class="player_action"></span>
+        <div class="player_two_dash">
+          <h2>Player 2 </h2>
+          <span style="font-weight:bold;"> Health Score </span>
+          <span id="p2_score"></span><br>
+          <span style="font-weight:bold;"> Weapon : </span>
+          <span id="p2_weapon"> </span><br />
+        </div>
+      </div>
+      <div class="hide" id="game-over"></div>
+      <div id="game_board" class="grid-container"></div>
+    </div>
+  </div>
+
+  <script src="jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+  <script src="scripts.js"></script>
+</body>
+
+</html>

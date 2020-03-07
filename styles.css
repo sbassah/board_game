@@ -1,0 +1,123 @@
+html{
+    background-color: antiquewhite;
+    background: url('img/back.jpg');
+    background-size: cover;
+}
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center; 
+}
+.game{
+    width: 50%;
+    margin: 0 auto;
+}
+.game_top{
+    margin: 10px 0;
+}
+.player_one_dash, .game_area, .player_two_dash{
+    float: left;
+}
+.player_one_dash, .player_two_dash{
+    margin: 10px;
+    background-color: rgb(33,135,215);
+    padding: 10px;
+    text-transform: capitalize;
+}
+.player_action{
+    float: left;
+    font-size:20px;
+    margin:10px;
+    color: #fff;
+}
+.grid-container{
+    display:grid;
+    grid-template-columns: repeat(10, 7vh);
+    grid-template-rows:repeat(10, 7vh); 
+    width: 435px;
+    margin: 0 auto;
+}
+#game-over {
+    width: 480px;
+    height: 480px;
+    line-height: 480px;
+    position: absolute;
+    background: transparent;
+    text-align: center;
+    font-size: 35px;
+    cursor: default;
+    animation: blur 1.5s ease-out infinite;
+    z-index: 10;
+    font-weight: bolder;
+}
+ .hide {
+    display: none;
+} 
+.grid-item{
+    background-color:#d18b47;  
+    border: 1px solid #000000;
+}
+.barrier{
+    background-image: url('img/obstacle.png');
+    background-size: contain;
+}
+[data-weapon="hoe"] {
+    background-image: url('img/hoe.png');
+    background-size: contain;
+}
+[data-weapon="sword"] {
+    background-image: url('img/sword.png');
+    background-size: contain;
+}
+
+[data-weapon="axe"] {
+    background-image: url('img/axe.png');
+    background-size: contain;
+}
+
+[data-weapon="broom"]{
+    background-image: url('img/broom.png');
+    background-size: contain;
+}
+[data-weapon="shovel"] {
+    background-image: url('img/shovel.png');
+    background-size: contain;
+}
+#player_one{
+    background-image: url('img/p1.png');
+    background-size: contain;
+    cursor: pointer;
+}
+
+#player_two{
+    background-image: url('img/p2.png');
+    background-size: contain;
+    cursor: pointer;
+}
+.selected{
+      background-color: red; 
+}
+.suggested{
+    background-color: aqua;
+     cursor: pointer;
+}
+.scores{
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+h2{
+    font-size: 25px;
+}
+h4 span{
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .player_action {
+        display: none;
+    }
+  }
